@@ -5,7 +5,7 @@ author: 'xrkffgg'
 
 # https://actions-cool.github.io/github-action-branding/
 branding:
-  icon: 'trello'
+  icon: 'aperture'
   color: 'red'
 
 inputs:
