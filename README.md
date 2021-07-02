@@ -13,7 +13,9 @@
 ```yml
 name: Emoji Helper
 
-on: release
+on:
+  release:
+    types: [published]
 
 jobs:
   emoji:
