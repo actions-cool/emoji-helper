@@ -1,22 +1,26 @@
 # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
-name: 'Action JS Template'
-description: 'A simple javascript template for rapid development of GitHub actions.'
+name: 'Emoji Helper'
+description: 'Add emoji to Issue、PR、release、comment'
 author: 'xrkffgg'
 
+# https://actions-cool.github.io/github-action-branding/
 branding:
-  # https://actions-cool.github.io/github-action-branding/
-  icon: 'file'
-  color: 'blue'
+  icon: 'trello'
+  color: 'red'
 
 inputs:
-  GITHUB_TOKEN:
+  token:
     description: Secret GitHub API token to use for making API requests.
     default: ${{ github.token }}
     required: true
-
-#outputs:
-#  result:
-#    description: action result
+  type:
+    description: Action type
+    required: true
+  emoji:
+    description: Add emoji
+    required: true
+  comment-id:
+    description: Add emoji to comment
 
 runs:
   using: 'node12'

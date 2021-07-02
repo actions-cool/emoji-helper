@@ -1,4 +1,4 @@
-# 🤪 Emoji 助手
+# 🤪 Emoji 助手 ( Translation help )
 
 简体中文 | [English](./README.en-US.md)
 
