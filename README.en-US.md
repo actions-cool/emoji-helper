@@ -1,12 +1,12 @@
-# 🤪 Emoji 助手 ( Translation help )
+# 🤪 Emoji Helper
 
-简体中文 | [English](./README.en-US.md)
+[简体中文](./README.md) | English
 
 ![](https://img.shields.io/github/workflow/status/actions-cool/emoji-helper/CI?style=flat-square)
 [![](https://img.shields.io/badge/marketplace-emoji--helper-blueviolet?style=flat-square)](https://github.com/marketplace/actions/emoji-helper)
 [![](https://img.shields.io/github/v/release/actions-cool/emoji-helper?style=flat-square&color=orange)](https://github.com/actions-cool/emoji-helper/releases)
 
-给 Issue、PR、Release、Comment 增加 Emoji
+Adds emoji to issues, PRs, releases and comments
 
 ## 🚀 How to use?
 
@@ -27,16 +27,16 @@ jobs:
 
 ### Inputs
 
-| 名称 | 描述 | 必填 |
-| -- | -- | -- |
-| token | GitHub token。如果不传，即为默认 token。 | ✖ |
-| type | 事件类型。可选：`issue` `pr` `release` `comment`。 | ✔ |
-| emoji | 增加 [emoji](#emoji-类型)。 | ✔ |
-| comment-id | 评论类型的 ID 。 | ✖ |
+| Name | Description | Required |
+| - | - | - |
+| token | GitHub token. If not passed, a default token is used. | ✖ |
+| type | Event type, one of: `issue`, `pr`, `release` or `comment`. | ✔ |
+| emoji | Emoji to add ([see mapping](#emoji-mapping)). | ✔ |
+| comment-id | The ID of the item to add the emoji to. | ✖ | 
 
-- `comment-id`：一般可能不太好找，[参照](https://github.com/actions-cool/issues-helper#find-comments)。
+- `comment-id`：一 Usually tricky to find, so consider [using the helper](https://github.com/actions-cool/issues-helper#find-comments).
 
-## Emoji 类型
+## Emoji Mapping
 
 | content | emoji |
 | -- | -- |
@@ -49,21 +49,21 @@ jobs:
 | `rocket` | 🚀 |
 | `eyes` | 👀 |
 
-## ⚡ 反馈
+## ⚡ Feedback
 
-欢迎你来尝试使用，并提出意见，你可以通过以下方式：
+Any feedback is much appreciated. If you find a bug or want to add a feature, you can so so in the following ways:
 
-- 通过 [Issue](https://github.com/actions-cool/emoji-helper/issues) 报告 bug 或进行咨询
-- 提交 [Pull Request](https://github.com/actions-cool/emoji-helper/pulls) 改进 `emoji-helper` 的代码
+- [Creating an issue](https://github.com/actions-cool/emoji-helper/issues) to report a bug
+- [Openign a Pull Request](https://github.com/actions-cool/emoji-helper/pulls) to improve the `emoji-helper` action
 
-也欢迎加入 钉钉交流群
+There's also a DingTalk exchange group (likely in Chinese). Scan below to join.
 
 ![](https://github.com/actions-cool/resources/blob/main/dingding.jpeg?raw=true)
 
-## 更新日志
+## Changelog
 
-[CHANGELOG](./CHANGELOG.md)
+The changelog is kept [in a separate file](./CHANGELOG.md)
 
-## LICENSE
+## License
 
 [MIT](./LICENSE)
